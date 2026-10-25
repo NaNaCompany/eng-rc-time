@@ -1,0 +1,43 @@
+{
+  "id": "E020",
+  "title": "RC 시정수 계산기",
+  "inputs_text": "등가저항 R [Ω], 정전용량 C [F]",
+  "formula": "τ = R C",
+  "output_text": "RC 시정수 τ [s]",
+  "assumptions": "R,C>0. 커패시터가 바라보는 등가저항을 사용하며 단일 1차 RC 모델에 한정한다. τ를 완전 충전 시간으로 표시하지 않는다.",
+  "purpose": "RC 시정수 계산 / 충방전·센서 필터 실험",
+  "sources": [
+    {
+      "label": "OpenStax · RC Circuits",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/10-5-rc-circuits"
+    }
+  ],
+  "slug": "eng-rc-time",
+  "category": "전기",
+  "result_label": "RC 시정수 τ",
+  "result_dimension": "time",
+  "fields": [
+    {
+      "key": "r",
+      "label": "등가저항 R",
+      "dimension": "resistance",
+      "example": 10000,
+      "constraint": "positive",
+      "display_unit": "ohm",
+      "display_value": "10000"
+    },
+    {
+      "key": "c",
+      "label": "정전용량 C",
+      "dimension": "capacitance",
+      "example": 1e-06,
+      "constraint": "positive",
+      "display_unit": "uF",
+      "display_value": "1"
+    }
+  ],
+  "site": "https://nanalab.kr/eng-rc-time/",
+  "repository": "https://github.com/NaNaCompany/eng-rc-time",
+  "condition": "",
+  "output_unit": "s"
+}
